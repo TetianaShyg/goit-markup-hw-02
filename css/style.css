@@ -8,7 +8,7 @@ body {
 .link {
   text-decoration: none;
 }
-
+/* ---HEADER---- */
 .header-logo {
   font-family: 'raleway', sans-serif;
   font-weight: 700;
@@ -42,6 +42,7 @@ body {
 .header-nav:focus {
   color: #2196f3;
 }
+/* ---MAIN---- */
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -62,6 +63,7 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
+  background-color: #f5f4fa;
 }
 .example-name {
   font-weight: 700;
@@ -77,6 +79,13 @@ body {
   letter-spacing: 0.03em;
   color: #757575;
 }
+.button-nav:hover,
+.button-nav:focus {
+  color: #ffffff;
+  cursor: pointer;
+  background-color: #2196f3;
+}
+/* ---FOOTER---- */
 .footer-logo {
   font-family: 'raleway', sans-serif;
   font-weight: 700;
@@ -97,6 +106,7 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  font-style: normal;
 }
 .footer-link {
   font-weight: 400;
@@ -104,4 +114,5 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  font-style: normal;
 }
