@@ -1,6 +1,19 @@
 body {
   font-family: 'roboto', sans-serif;
   color: #212121;
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+  font-size: 14px;
+  --black-color: #212121;
+  --white-color: #ffffff;
+  --gray-color: #757575;
+  --blue-color: #2196f3;
+  --bg-beige: #eeeeee;
+  --bg-black: #000000;
+  --bg-ivory: #f5f4fa;
+  --bg-white: #FFFFFF60%;
+  --bg-darkgray: #2f303a;
+  --bg-light-gray: #ececec;
 }
 .list {
   list-style: none;
@@ -14,33 +27,31 @@ body {
   font-weight: 700;
   font-size: 26px;
   line-height: 1.17%;
-  color: #000000;
+  color: var(--bg-black);
 }
 .header-nav {
   font-weight: 500;
-  font-size: 24px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #212121;
+  color: var(--black-color);
 }
 .logo-part {
-  color: #000000;
+  color: var(--bg-black);
 }
-.header-nav .link.current {
-  color: #2196f3;
+.current {
+  color: var(--blue-color);
 }
 .header-contact {
   font-weight: 500;
-  font-size: 24px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: #757575;
+  color: var(--gray-color);
 }
 .header-contact:hover,
 .header-contact:focus,
 .header-nav:hover,
 .header-nav:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
 /* ---MAIN---- */
 .visually-hidden {
@@ -61,32 +72,33 @@ body {
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
-  background-color: #f5f4fa;
+  color: var(--black-color);
+  background-color: var(--bg-ivory);
+  font-family: inherit;
 }
 .example-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  color: #212121;
+  color: var(--black-color);
 }
 .example-list {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--gray-color);
 }
 .button-nav:hover,
 .button-nav:focus {
-  color: #ffffff;
+  color: var(--white-color);
   cursor: pointer;
-  background-color: #2196f3;
+  font-family: inherit;
+  background-color: var(--blue-color);
 }
 .section-one {
-  background-color: #2f303a;
+  background-color: var(--bg-darkgray);
 }
 .paragraph-main {
   font-weight: 900;
@@ -95,7 +107,7 @@ body {
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  color: #ffffff;
+  color: var(--white-color);
 }
 .button-nav-main {
   font-weight: 700;
@@ -105,77 +117,72 @@ body {
   align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
-  color: #ffffff;
-  background-color: #2196f3;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  cursor: pointer;
+  font-family: inherit;
 }
 .button-nav-main:hover,
 .button-nav-main:focus {
-  color: #ffffff;
-  cursor: pointer;
-  background-color: #2f303a;
+  color: var(--white-color);
+  background-color: var(--bg-darkgray);
 }
 .list-item-name {
   font-weight: 700;
-  font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .list-item-description {
   font-weight: 400;
-  font-size: 14px;
   line-height: 1.71;
-  letter-spacing: 0.03em;
+  color: var(--gray-color);
 }
 .section-header {
   font-weight: 700;
   font-size: 36px;
   line-height: 42px;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
 }
 .team-position {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
-  letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--gray-color);
 }
 .section-team {
-  background-color: #f5f4fa;
+  background-color: var(--bg-ivory);
 }
 .team-list {
-  background-color: #ffffff;
+  background-color: var(--white-color);
 }
 /* ---FOOTER---- */
 .footer-logo {
   font-family: 'raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
-  line-height: 1.17%;
-  color: #2196f3;
+  line-height: 1.17;
+  color: var(--blue-color);
 }
 
 .logo-footer {
-  color: #ffffff;
+  color: var(--white-color);
 }
 .footer-nav {
-  background-color: #2f303a;
+  background-color: var(--bg-darkgray);
 }
 .footer-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: #ffffff;
+  color: var(--white-color);
   font-style: normal;
 }
 .footer-link {
@@ -190,5 +197,5 @@ body {
 .footer-link:hover,
 .footer-address:focus,
 .footer-link:focus {
-  color: #2196f3;
+  color: var(--blue-color);
 }
