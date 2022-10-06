@@ -1,9 +1,4 @@
-body {
-  font-family: 'roboto', sans-serif;
-  color: #212121;
-  background-color: #ffffff;
-  letter-spacing: 0.03em;
-  font-size: 14px;
+:root {
   --black-color: #212121;
   --white-color: #ffffff;
   --gray-color: #757575;
@@ -14,6 +9,13 @@ body {
   --bg-white: #FFFFFF60%;
   --bg-darkgray: #2f303a;
   --bg-light-gray: #ececec;
+}
+body {
+  font-family: 'roboto', sans-serif;
+  color: #212121;
+  background-color: #ffffff;
+  letter-spacing: 0.03em;
+  font-size: 14px;
 }
 .list {
   list-style: none;
@@ -74,7 +76,9 @@ body {
   text-align: center;
   color: var(--black-color);
   background-color: var(--bg-ivory);
+  letter-spacing: 0.03em;
   font-family: inherit;
+  cursor: pointer;
 }
 .example-name {
   font-weight: 700;
@@ -84,7 +88,6 @@ body {
   color: var(--black-color);
 }
 .example-list {
-  font-weight: 400;
   font-size: 16px;
   line-height: 1.88;
   letter-spacing: 0.03em;
@@ -93,8 +96,6 @@ body {
 .button-nav:hover,
 .button-nav:focus {
   color: var(--white-color);
-  cursor: pointer;
-  font-family: inherit;
   background-color: var(--blue-color);
 }
 .section-one {
@@ -129,6 +130,7 @@ body {
 }
 .list-item-name {
   font-weight: 700;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
